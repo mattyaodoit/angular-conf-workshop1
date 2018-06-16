@@ -1,4 +1,4 @@
-<!-- <form>
-  <input type="text" />
+<form [formGroup]="newMessageform" (ngSubmit)="sendMessage()">
+  <input type="text" formControlName="message" />
   <button type="submit"><i class="fa fa-send"></i></button>
-</form> -->
+</form>

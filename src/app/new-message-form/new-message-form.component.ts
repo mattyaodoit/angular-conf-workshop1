@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ClientWrapper } from '../client-wrapper';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-new-message-form',
@@ -8,7 +9,20 @@ import { ClientWrapper } from '../client-wrapper';
 })
 export class NewMessageFormComponent implements OnInit {
 
-  constructor( private wrapper: ClientWrapper) { }
+  newMessageform: FormGroup;
+
+  constructor(private wrapper: ClientWrapper, formBuilder: FormBuilder) {
+    this.newMessageform = formBuilder.group({
+      message: ''
+    });
+  }
+
+  sendMessage(): void {
+    this.wrapper.client.sendMessage({
+      text: this.newMessageform.value.message
+    });
+    this.newMessageform.reset();
+  }
 
   ngOnInit() {
   }
