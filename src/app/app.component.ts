@@ -20,6 +20,10 @@ export class AppComponent {
     return users.find(user => user.id === id).avatarUrl;
   }
 
+  login(value: any): void {
+    this.wrapper.client.tryLogin(value.user);
+  }
+
   ngOnInit() {
     this.wrapper.client.stateChanges.subscribe(value => {
       this.clientState = value;

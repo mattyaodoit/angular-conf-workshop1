@@ -1,4 +1,4 @@
-<form [formGroup]="form" (ngSubmit)="login()">
+<form [formGroup]="form" (ngSubmit)="onLogin.next(form.value)">
   <input type="text" formControlName="username" />
   <button type="submit">Login</button>
 </form>

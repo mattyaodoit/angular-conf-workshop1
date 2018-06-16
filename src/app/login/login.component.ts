@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { ClientWrapper } from '../client-wrapper';
 
@@ -10,6 +10,7 @@ import { ClientWrapper } from '../client-wrapper';
 export class LoginComponent implements OnInit {
 
   form: FormGroup;
+  @Output() onLogin = new EventEmitter();
 
   constructor(formBuilder: FormBuilder, private wrapper: ClientWrapper) {
     this.form = formBuilder.group({
