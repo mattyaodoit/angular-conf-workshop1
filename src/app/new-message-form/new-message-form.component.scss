@@ -1,0 +1,33 @@
+@import '../../_variables.scss';
+
+form {
+  display: flex;
+  padding: .5em;
+  border-top: 1px solid $border-color;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1), 0 0 10px rgba(0,0,0,0.1);
+  > input,
+  > button {
+    display: flex;
+    align-items: center;
+    padding: 0 .5em;    
+    height: 3rem;
+    font-size: 1rem;    
+    outline: 0;
+  }
+  > input[type='text'] {
+    flex: 1;
+    border: 1px solid $border-color;    
+    margin-right: .5em;
+  }
+  > input[type='submit'],
+  > button {
+    display: flex;
+    min-width: 3rem;
+    justify-content: center;
+    border: 0;
+    color: #ffffff;
+    background-color: $primary-color;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);        
+    cursor: pointer;
+  }
+}

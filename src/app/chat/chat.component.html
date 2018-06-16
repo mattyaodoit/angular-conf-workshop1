@@ -1,0 +1,43 @@
+<!-- TASK 1: create header -->
+
+<!-- End Task 1 -->
+
+<div class="chat-wrapper">
+
+	<!-- =============================================================== -->
+	<!-- User list -->
+	<!-- =============================================================== -->
+	<div class="user-list">
+		<!-- TASK 3: render messages -->
+		
+		<!-- End TASK 3 -->
+
+		<!-- this is a demo user -->
+		<app-user [user]="dummyUser"></app-user>
+	</div>
+
+
+	<!-- =============================================================== -->
+	<!-- Chat box -->
+	<!-- =============================================================== -->
+	<div class="chat-box">
+		<div class="chat-history">
+
+			<!-- TASK 4: render messages -->
+			
+			<!-- End Task 4 -->
+
+			<!-- this is a demo message -->
+			<app-message avatarUrl="https://robohash.org/Paul" message="Hi"></app-message>
+		</div>
+
+
+		<!-- =============================================================== -->
+		<!-- New message form -->
+		<!-- =============================================================== -->
+
+		<!-- TASK 5: new message form -->
+		<app-new-message-form></app-new-message-form>
+		<!-- End TASK 5 -->
+	</div>
+</div>

@@ -1,0 +1,34 @@
+@import './_variables.scss';
+* {
+  box-sizing: border-box;
+  line-height: 1.3;
+}
+
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;  
+  font-size: 16px;
+  margin: 0;
+  background-color: $background-dark-color;
+}
+
+
+input,
+button {
+  padding: 0 .5em;    
+  height: 3rem;
+  font-size: 1rem;    
+  outline: 0;
+}
+input[type='text'] {
+  border: 1px solid $border-color;    
+  margin-right: .5em;
+}
+input[type='submit'],
+button {
+  min-width: 3rem;
+  border: 0;
+  color: #ffffff;
+  background-color: $primary-color;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.2);        
+  cursor: pointer;
+}

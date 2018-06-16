@@ -1,0 +1,25 @@
+<div *ngIf="this.clientState$ | async as clientState">
+	<small>{{clientState | json}}</small>
+
+	<div class="chat-app">
+    
+    <!-- TASK 2: render login component if not logged in -->
+
+    <!-- After TASK 2: render chat component if logged in -->
+		<!-- hint: <app-chat [clientState]="clientState"></app-chat> -->
+    <!-- End TASK 2 -->
+	</div>
+
+</div>
+
+	<!-- TASK 1: create header component and add to chat component -->
+
+	<!-- TASK 2: create login component and add to app component -->
+
+	<!-- TASK 3: create user list in chat component -->
+
+	<!-- TASK 4: create message list in chat component -->
+  <!-- hint: getAvatar function can be used to return avatar url -->
+
+	<!-- TASK 5: modify new message form and add to chat component -->
+  <!-- hint: chat client provider sendMessage(message: string) service, similar to tryLogin() function -->
