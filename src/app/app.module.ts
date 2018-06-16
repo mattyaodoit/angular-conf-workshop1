@@ -7,12 +7,13 @@ import { NewMessageFormComponent } from './new-message-form/new-message-form.com
 import { ClientWrapper } from './client-wrapper';
 import { ChatComponent } from './chat/chat.component';
 import { UserComponent } from './user/user.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   imports: [
     BrowserModule
   ],
-  declarations: [AppComponent, MessageComponent, NewMessageFormComponent, ChatComponent, UserComponent],
+  declarations: [AppComponent, MessageComponent, NewMessageFormComponent, ChatComponent, UserComponent, HeaderComponent],
   providers: [ClientWrapper],
   bootstrap: [AppComponent]
 })

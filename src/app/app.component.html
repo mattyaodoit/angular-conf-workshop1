@@ -1,8 +1,8 @@
-<div *ngIf="this.clientState$ | async as clientState">
-	<small>{{clientState | json}}</small>
+<div *ngIf="this.clientState">
+	<!-- <small>{{clientState | json}}</small> -->
 
-	<div class="chat-app">
-    
+	<div class="chat-app">	
+    <app-header></app-header>
     <!-- TASK 2: render login component if not logged in -->
 
     <!-- After TASK 2: render chat component if logged in -->
