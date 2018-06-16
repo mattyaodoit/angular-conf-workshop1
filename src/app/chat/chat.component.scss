@@ -13,6 +13,7 @@
   .user-list {
     border-right: 1px solid #cccccc;
     padding: 1em;
+    overflow-y: scroll;
   }
   .chat-box {
     flex: 1;

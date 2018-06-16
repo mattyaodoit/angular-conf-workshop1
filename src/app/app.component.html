@@ -7,7 +7,7 @@
 		<app-login *ngIf="!clientState.chat.isAuthenticated"></app-login>
 
     <!-- After TASK 2: render chat component if logged in -->
-		<app-chat [clientState]="clientState"></app-chat>
+		<app-chat *ngIf="clientState.chat.isAuthenticated" [clientState]="clientState"></app-chat>
     <!-- End TASK 2 -->
 	</div>
 

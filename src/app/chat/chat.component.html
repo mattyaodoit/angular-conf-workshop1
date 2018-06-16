@@ -13,7 +13,7 @@
 		<!-- End TASK 3 -->
 
 		<!-- this is a demo user -->
-		<app-user [user]="dummyUser"></app-user>
+		<app-user *ngFor="let user of clientState.chat.users" [user]="user"></app-user>			
 	</div>
 
 
@@ -28,7 +28,7 @@
 			<!-- End Task 4 -->
 
 			<!-- this is a demo message -->
-			<app-message avatarUrl="https://robohash.org/Paul" message="Hi"></app-message>
+			<app-message avatarUrl="https://robohash.org/Paul" *ngFor="let message of clientState.chat.messages" [message]="message.text"></app-message>
 		</div>
 
 
