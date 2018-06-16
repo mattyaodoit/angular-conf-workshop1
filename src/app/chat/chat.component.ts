@@ -13,9 +13,6 @@ export class ChatComponent implements OnInit {
 
   @Input() clientState: ClientState
 
-  dummyUser = { "name": "Dummy user", "isConnected": false, "isTyping": false, "id": 1, "avatarUrl": "https://robohash.org/Dummy user?size=128x128" }
-
-
   constructor() { }
 
   getAvatar(senderId, users) {
