@@ -1,12 +1,13 @@
 <div *ngIf="this.clientState">
-	<!-- <small>{{clientState | json}}</small> -->
+	<small>{{clientState | json}}</small>
 
 	<div class="chat-app">	
     <app-header value="Greetings earthlings"></app-header>
-    <!-- TASK 2: render login component if not logged in -->
+		<!-- TASK 2: render login component if not logged in -->
+		<app-login *ngIf="!clientState.chat.isAuthenticated"></app-login>
 
     <!-- After TASK 2: render chat component if logged in -->
-		<!-- hint: <app-chat [clientState]="clientState"></app-chat> -->
+		<app-chat [clientState]="clientState"></app-chat>
     <!-- End TASK 2 -->
 	</div>
 
